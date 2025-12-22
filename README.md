@@ -3,23 +3,25 @@
 This is an identical replica of the Flowva Rewards Hub page, built for the frontend test.
 It is a full stack web application with Supabase for authentication, database management, and state handling.
 
-## Live Demo
+# Live Demo
+
+https://vovwe-flowva-test.vercel.app/
 
 
-## 🛠 Tech Stack
+# Tech Stack
 - **Frontend:** React (Vite), Tailwind CSS
 - **Icons:** Lucide React
 - **Animations:** CSS Transitions & Framer Motion logic
 - **Backend:** Supabase (PostgreSQL, Auth, RLS Policies)
 - **Routing:** React Router v6
 
-## Key Features
+# Key Features
 - **Authentication:** Custom Login/Signup flow with Supabase Auth.
 - **Rewards Hub:**
   - **Earn Tab:** View points balance, track daily streaks, and claim daily rewards (with 24h lockout logic).
   - **Redeem Tab:** Filter rewards by status (All, Unlocked, Locked, Coming Soon).
 
-## Instructions to Setup
+# Instructions to Setup
 
    git clone https://github.com/kingvovwe/vovwe-flowva-test.git
 
@@ -31,7 +33,7 @@ It is a full stack web application with Supabase for authentication, database ma
 
    npm run dev
 
-## The Database Schemas
+# The Database Schemas
 
 create table public.profiles (
   id uuid references auth.users not null primary key,
