@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        flowva: {
+        pageColors: {
           purple: '#8b5cf6',
           purpleLight: '#f3e8ff',
           text: '#111827',

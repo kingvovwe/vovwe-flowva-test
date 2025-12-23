@@ -65,7 +65,7 @@ const LoginPage = () => {
             placeholder="user@example.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] focus:border-transparent transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-pageColors-purple focus:border-transparent transition-all"
           />
         </div>
 
@@ -77,10 +77,10 @@ const LoginPage = () => {
             placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] focus:border-transparent transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-pageColors-purple focus:border-transparent transition-all"
           />
           <div className="flex justify-end mt-1">
-            <button type="button" className="text-sm text-[#8b5cf6] hover:underline">
+            <button type="button" className="text-sm text-pageColors-purple hover:underline">
               Forgot Password?
             </button>
           </div>
@@ -89,7 +89,7 @@ const LoginPage = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-[#8b5cf6] hover:bg-[#7c3aed] text-white font-semibold py-3 rounded-full transition-colors flex items-center justify-center"
+          className="w-full bg-pageColors-purple hover:bg-[#7c3aed] text-white font-semibold py-3 rounded-full transition-colors flex items-center justify-center"
         >
           {loading ? <Loader2 className="animate-spin h-5 w-5" /> : 'Sign in'}
         </button>
@@ -119,7 +119,7 @@ const LoginPage = () => {
 
         <p className="text-center text-sm text-gray-500 mt-6">
           Don't have an account?{' '}
-          <Link to="/signup" className="text-[#8b5cf6] font-medium hover:underline">
+          <Link to="/signup" className="text-pageColors-purple font-medium hover:underline">
             Sign up
           </Link>
         </p>

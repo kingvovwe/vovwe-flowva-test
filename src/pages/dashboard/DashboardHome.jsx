@@ -30,7 +30,7 @@ const DashboardHome = () => {
   const HomeHeader = (
     <div className="animate-in fade-in slide-in-from-left-2 duration-300">
       <h1 className="text-2xl font-bold text-gray-800">
-        Good evening, <span className="text-[#8b5cf6] capitalize">{userName}</span>
+        Good evening, <span className="text-pageColors-purple capitalize">{userName}</span>
       </h1>
     </div>
   );
@@ -43,13 +43,13 @@ const DashboardHome = () => {
 
         <Card className="text-center">
           <CardContent className="p-12 flex flex-col items-center justify-center">
-            <div className="w-16 h-16 bg-[#f3e8ff] rounded-full flex items-center justify-center mb-6">
-              <Layers size={32} className="text-[#8b5cf6]" />
+            <div className="w-16 h-16 bg-pageColors-purpleLight rounded-full flex items-center justify-center mb-6">
+              <Layers size={32} className="text-pageColors-purple" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">No Tools Added Yet</h3>
             <p className="text-gray-500 max-w-md mb-8">Start by adding your favorite tools to your library. We'll help you track usage, subscriptions, and optimize your stack.</p>
             <div className="flex gap-4">
-               <button onClick={() => setShowModal(true)} className="bg-[#8b5cf6] text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 hover:bg-violet-600 transition-colors shadow-lg shadow-purple-100">
+               <button onClick={() => setShowModal(true)} className="bg-pageColors-purple text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 hover:bg-violet-600 transition-colors shadow-lg shadow-purple-100">
                  <Plus size={18} /> Add Your First Tool
                </button>
                <button onClick={() => setShowModal(true)} className="bg-white border border-gray-200 text-gray-700 px-6 py-3 rounded-full font-medium flex items-center gap-2 hover:bg-gray-50 transition-colors">

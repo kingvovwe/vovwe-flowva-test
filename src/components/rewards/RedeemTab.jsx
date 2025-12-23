@@ -24,17 +24,17 @@ const RedeemTab = ({ rewards, userPoints }) => {
     <button
       onClick={() => setFilter(id)}
       className={`pb-2 text-sm font-medium transition-all relative flex items-center gap-2 ${
-        filter === id ? 'text-flowva-purple' : 'text-gray-400 hover:text-gray-600'
+        filter === id ? 'text-pageColors-purple' : 'text-gray-400 hover:text-gray-600'
       }`}
     >
       {label}
       <span className={`h-5 px-1.5 rounded-md text-[10px] font-bold flex items-center justify-center ${
-        filter === id ? 'bg-flowva-purple text-white' : 'bg-gray-100 text-gray-400'
+        filter === id ? 'bg-pageColors-purple text-white' : 'bg-gray-100 text-gray-400'
       }`}>
         {counts[id]}
       </span>
       {filter === id && (
-        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-flowva-purple rounded-t-full"></span>
+        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pageColors-purple rounded-t-full"></span>
       )}
     </button>
   );
@@ -42,7 +42,7 @@ const RedeemTab = ({ rewards, userPoints }) => {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
       
-      <h2 className="text-xl font-bold text-gray-900 mb-6 pl-4 border-l-4 border-flowva-purple">
+      <h2 className="text-xl font-bold text-gray-900 mb-6 pl-4 border-l-4 border-pageColors-purple">
         Redeem Your Points
       </h2>
 
@@ -77,7 +77,7 @@ const RedeemTab = ({ rewards, userPoints }) => {
 
                 <div className="flex items-center gap-1.5 text-sm font-bold mb-6">
                   <Star size={16} className="text-yellow-400" fill="currentColor" /> 
-                  <span className="text-[#8b5cf6]">{item.points_required} pts</span>
+                  <span className="text-pageColors-purple">{item.points_required} pts</span>
                 </div>
 
                 <div className="mt-auto w-full">
@@ -91,7 +91,7 @@ const RedeemTab = ({ rewards, userPoints }) => {
                       className={`w-full py-3 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 ${
                         isLocked
                           ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                          : 'bg-flowva-purple text-white hover:bg-violet-600 shadow-lg shadow-purple-100'
+                          : 'bg-pageColors-purple text-white hover:bg-violet-600 shadow-lg shadow-purple-100'
                       }`}
                     >
                       {isLocked ? (

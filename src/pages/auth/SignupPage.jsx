@@ -123,7 +123,7 @@ const SignupPage = () => {
             placeholder="example@gmail.com"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-pageColors-purple transition-all"
           />
         </div>
 
@@ -136,7 +136,7 @@ const SignupPage = () => {
             placeholder="Your Password"
             value={formData.password}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-pageColors-purple transition-all"
           />
         </div>
 
@@ -149,21 +149,21 @@ const SignupPage = () => {
             placeholder="Re-enter Password"
             value={formData.confirmPassword}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-pageColors-purple transition-all"
           />
         </div>
 
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-[#8b5cf6] hover:bg-[#7c3aed] text-white font-semibold py-3 rounded-full transition-colors flex items-center justify-center"
+          className="w-full bg-pageColors-purple hover:bg-[#7c3aed] text-white font-semibold py-3 rounded-full transition-colors flex items-center justify-center"
         >
           {loading ? <Loader2 className="animate-spin h-5 w-5" /> : 'Sign up Account'}
         </button>
 
         <p className="text-center text-sm text-gray-500 mt-6">
           Already have an account?{' '}
-          <Link to="/login" className="text-[#8b5cf6] font-medium hover:underline">
+          <Link to="/login" className="text-pageColors-purple font-medium hover:underline">
             Log In
           </Link>
         </p>

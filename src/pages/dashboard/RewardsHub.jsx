@@ -20,7 +20,7 @@ const RewardsHub = () => {
     return (
       <DashboardLayout customHeader={RewardsHeader}>
         <div className="h-[80vh] flex items-center justify-center">
-          <Loader2 className="animate-spin text-[#8b5cf6] w-10 h-10" />
+          <Loader2 className="animate-spin text-pageColors-purple w-10 h-10" />
         </div>
       </DashboardLayout>
     );
@@ -30,13 +30,13 @@ const RewardsHub = () => {
     <DashboardLayout customHeader={RewardsHeader}>
       <div className="max-w-7xl mx-auto">
         <div className="flex gap-8 border-b border-gray-100 mb-8">
-          <button onClick={() => setActiveTab('earn')} className={`pb-3 text-sm font-medium transition-all relative ${activeTab === 'earn' ? 'text-[#8b5cf6]' : 'text-gray-500 hover:text-gray-800'}`}>
+          <button onClick={() => setActiveTab('earn')} className={`pb-3 text-sm font-medium transition-all relative ${activeTab === 'earn' ? 'text-pageColors-purple' : 'text-gray-500 hover:text-gray-800'}`}>
             Earn Points
-            {activeTab === 'earn' && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#8b5cf6] rounded-t-full"></span>}
+            {activeTab === 'earn' && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pageColors-purple rounded-t-full"></span>}
           </button>
-          <button onClick={() => setActiveTab('redeem')} className={`pb-3 text-sm font-medium transition-all relative ${activeTab === 'redeem' ? 'text-[#8b5cf6]' : 'text-gray-500 hover:text-gray-800'}`}>
+          <button onClick={() => setActiveTab('redeem')} className={`pb-3 text-sm font-medium transition-all relative ${activeTab === 'redeem' ? 'text-pageColors-purple' : 'text-gray-500 hover:text-gray-800'}`}>
             Redeem Rewards
-            {activeTab === 'redeem' && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#8b5cf6] rounded-t-full"></span>}
+            {activeTab === 'redeem' && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pageColors-purple rounded-t-full"></span>}
           </button>
         </div>
 

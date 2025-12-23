@@ -51,8 +51,8 @@ const DashboardLayout = ({ children, customHeader }) => {
       <aside className={`w-72 bg-white fixed h-full z-50 border-r border-gray-100 flex flex-col transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
         <div className="p-8 pb-4">
           <div className="flex items-center gap-2 mb-10 pl-2">
-             <div className="w-9 h-9 bg-[#8b5cf6] rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-purple-200">F</div>
-             <span className="text-2xl font-bold text-gray-900 tracking-tight">Flowva</span>
+             <div className="w-9 h-9 bg-pageColors-purple rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-purple-200">F</div>
+             <span className="text-2xl font-bold text-gray-900 tracking-tight">VFlowva</span>
           </div>
           
           <nav className="space-y-1">
@@ -68,7 +68,7 @@ const DashboardLayout = ({ children, customHeader }) => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`flex items-center gap-3 px-4 py-3.5 rounded-2xl text-sm font-bold transition-all duration-200 ${
                       isActive 
-                        ? 'bg-[#f3e8ff] text-[#8b5cf6]'
+                        ? 'bg-pageColors-purpleLight text-pageColors-purple'
                         : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900'
                     }`}
                   >
@@ -122,12 +122,12 @@ const DashboardLayout = ({ children, customHeader }) => {
             {/* Notification */}
             <div className="relative ml-4">
               <button onClick={() => setIsNotifOpen(!isNotifOpen)} className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm border border-gray-200 hover:border-purple-200 hover:shadow-md transition-all relative group">
-                <Bell size={20} className="text-gray-400 group-hover:text-[#8b5cf6] transition-colors" />
+                <Bell size={20} className="text-gray-400 group-hover:text-pageColors-purple transition-colors" />
                 <span className="absolute top-2 right-2.5 w-2 h-2 bg-red-500 rounded-full border border-white"></span>
               </button>
               {isNotifOpen && (
                 <div className="absolute right-0 top-12 w-80 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden animate-in fade-in zoom-in-95 duration-200 z-50">
-                  <div className="bg-gradient-to-r from-[#8b5cf6] to-[#ec4899] p-4 flex justify-between items-center text-white">
+                  <div className="bg-gradient-to-r from-pageColors-purple to-[#ec4899] p-4 flex justify-between items-center text-white">
                     <h3 className="font-bold text-sm">Notifications</h3>
                     <div className="flex gap-3"><button className="text-[10px] font-medium hover:underline opacity-90">Mark read</button><button className="text-[10px] font-medium hover:underline opacity-90">Delete All</button></div>
                   </div>

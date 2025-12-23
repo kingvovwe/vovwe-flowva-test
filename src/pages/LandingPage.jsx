@@ -13,21 +13,21 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-[#8b5cf6] rounded-lg flex items-center justify-center text-white font-bold">F</div>
+              <div className="w-8 h-8 bg-pageColors-purple rounded-lg flex items-center justify-center text-white font-bold">F</div>
               <span className="text-xl font-bold text-gray-900">Vovwe Test</span>
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
-              <div className="flex items-center gap-1 text-gray-600 hover:text-[#8b5cf6] cursor-pointer">
+              <div className="flex items-center gap-1 text-gray-600 hover:text-pageColors-purple cursor-pointer">
                 <span>Hub</span> <ChevronDown size={16} />
               </div>
-              <a href="#" className="text-gray-600 hover:text-[#8b5cf6]">Company</a>
-              <a href="#" className="text-gray-600 hover:text-[#8b5cf6]">Support</a>
-              <a href="#" className="text-gray-600 hover:text-[#8b5cf6]">Community</a>
+              <a href="#" className="text-gray-600 hover:text-pageColors-purple">Company</a>
+              <a href="#" className="text-gray-600 hover:text-pageColors-purple">Support</a>
+              <a href="#" className="text-gray-600 hover:text-pageColors-purple">Community</a>
             </div>
 
             <div className="hidden md:flex items-center gap-4">
-              <Link to="/login" className="text-gray-900 font-medium hover:text-[#8b5cf6]">Login</Link>
+              <Link to="/login" className="text-gray-900 font-medium hover:text-pageColors-purple">Login</Link>
               <Link to="/signup" className="bg-gray-900 text-white px-5 py-2.5 rounded-full font-medium hover:bg-gray-800 transition-colors">
                 Sign up
               </Link>
@@ -40,6 +40,19 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        {isMenuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 px-4 py-6 shadow-lg flex flex-col gap-4 animate-in slide-in-from-top-5 duration-200">
+            <a href="#" className="text-lg font-medium text-gray-600 hover:text-pageColors-purple">Hub</a>
+            <a href="#" className="text-lg font-medium text-gray-600 hover:text-pageColors-purple">Company</a>
+            <a href="#" className="text-lg font-medium text-gray-600 hover:text-pageColors-purple">Support</a>
+            <a href="#" className="text-lg font-medium text-gray-600 hover:text-pageColors-purple">Community</a>
+            <div className="h-px bg-gray-100 my-2"></div>
+            <Link to="/login" className="text-lg font-medium text-gray-900 hover:text-pageColors-purple">Login</Link>
+            <Link to="/signup" className="bg-black text-white px-5 py-3 rounded-full font-medium text-center hover:bg-gray-800 transition-colors">
+              Sign up
+            </Link>
+          </div>
+        )}
       </nav>
 
       <section className="pt-32 pb-20 px-4 text-center">
@@ -116,9 +129,9 @@ const LandingPage = () => {
       <footer className="bg-black text-white py-16">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-1">
-            <h4 className="text-2xl font-bold mb-6">Flowva</h4>
+            <h4 className="text-2xl font-bold mb-6">VFlowva</h4>
             <p className="text-gray-400 text-sm">The smart way to manage your digital life and get rewarded.</p>
-            <p className="text-gray-500 text-xs mt-4">© 2025 Flowva</p>
+            <p className="text-gray-500 text-xs mt-4">© 2025 VFlowva</p>
           </div>
           
           <div>
